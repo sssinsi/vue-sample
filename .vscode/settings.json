@@ -1,0 +1,34 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    
+    // Html, JavaScript, Vue
+    "files.associations" :{
+        "*.vue" : "vue"
+    },
+    // vueにcssのemmet追加
+    "emmet.syntaxProfiles": {
+        "vue": "css"
+    },
+    // vueだけで追加したい設定
+    "[vue]" :{
+        "editor.formatOnSave": true
+    },
+    "eslint.enable": true,
+    // 適応するファイルタイプを決定
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    // プロジェクト配下のeslintrc.jsを読み込み
+    "eslint.options": {
+        "configFile": "./tutorial/.eslintrc.js"
+    },
+    // 保存時に自動フォーマット
+    "eslint.autoFixOnSave": true,
+    
+    
+}
